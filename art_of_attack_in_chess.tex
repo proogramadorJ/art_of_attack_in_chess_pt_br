@@ -1,0 +1,73 @@
+	\documentclass[12pt, openright]{book}
+	\usepackage{a4wide}
+	\usepackage{array}
+	\newcolumntype{C}{>{\centering\arraybackslash}X}
+	\renewcommand{\arraystretch}{1.2}
+	\usepackage{booktabs}
+	\usepackage{tabularx}
+	\usepackage{caption}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{natbib}
+	\usepackage{graphicx}
+	\usepackage{blindtext}
+	\usepackage[pagestyles]{titlesec} 
+	
+	
+	
+	\usepackage{tocloft}
+	
+	
+	% ===== Define abstract environment =====
+	\newcommand{\prefacename}{Prefacio por Hohn Nunn}
+	\newenvironment{preface}{
+		\vspace*{\stretch{2}}
+		{\noindent \bfseries \Huge \prefacename}
+		\begin{center}
+			% \phantomsection \addcontentsline{toc}{chapter}{\prefacename} % enable this if you want to put the preface in the table of contents
+			\thispagestyle{plain}
+		\end{center}%
+	}
+	{\vspace*{\stretch{5}}}
+	
+	\begin{document}
+		\title{\textbf{Arte do ataque no xadrez}}
+		\author{Vladimir Vukovic}
+		\date{2008}
+		\maketitle
+		\pagestyle{empty}
+		
+	
+		
+		\shipout\null
+		
+		\frontmatter
+		\pagenumbering{Roman} 
+		
+		\begin{preface}
+			Atacar o rei inimigo é uma das partes mais emocionantes do xadrez, mas também uma das mais difíceis de jogar com precisão. Todo jogador de xadrez teve a experiência de ver um ataque de aparência promissora virar poeira, após o contra-ataque inimigo varrer tudo ao seu redor. O excelente livro \textit{Arte do ataque no xadrez} de Vukovic é uma tentativa instigante de explicar porque alguns ataques resultam em sucesso enquanto outros falham em atingir seu objetivo.
+		\end{preface}
+		
+		\clearpage
+		
+		\tableofcontents
+		
+	\clearpage
+		
+		\assignpagestyle{\chapter}{plain}
+		\section{Introdução}
+		 TO DO
+		
+	%	\clearpage
+	%	\listoffigures
+		
+	%	\clearpage
+	%	\listoftables
+		
+		
+		
+	%	\mainmatter
+		
+	%	\Blinddocument
+		
+	\end{document}
